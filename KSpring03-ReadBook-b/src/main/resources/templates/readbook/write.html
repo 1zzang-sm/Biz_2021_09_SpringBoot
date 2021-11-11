@@ -1,0 +1,40 @@
+<html lang="ko"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="~{/layout}"
+>
+<section layout:fragment="content" class="content">
+    <form class="readbook_write" method="POST">
+        <fieldset>
+            <legend>독서록 작성</legend>
+            <input type="hidden"
+                   th:name="*{_csrf.parameterName}"
+                   th:value="*{_csrf.token}" />
+            <div class="insert">
+                <input name="isbn" placeholder="ISBN"/>
+                <input name="title" placeholder="도서명" />
+            </div>
+            <div class="time">
+                <label>읽은 날짜:</label><input name="sdate" type="date"/>
+                <label>읽기 시작:</label><input name="stime" type="time"/>
+                <label>읽기 마침:</label><input name="etime" type="time"/>
+            </div>
+            <div class="insert" >
+                <input name="subject" placeholder="자신의 위험을 무릅쓰고 하지 않을 행동을 충동질 하는 이를 조심하라." />
+            </div>
+            <div class="insert">
+                <input name="content" placeholder="내용을 입력하세요" />
+            </div>
+            <div class="insert btn_box right">
+                <button type="submit" class="save">저장</button>
+                <button type="reset" class="reset">새로작성</button>
+                <button type="button" class="list" id="list">리스트로</button>
+            </div>
+        </fieldset>
+    </form>
+</section>
+<script>
+    document.getElementById('list').addEventListener('click', ()=>{
+        alert('abcd')
+    })
+</script>
+</html>

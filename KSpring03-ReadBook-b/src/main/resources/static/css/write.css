@@ -1,0 +1,87 @@
+form {
+    width: 80%;
+    height: 80vh;
+    margin: 10px auto;
+    padding: 1rem;
+}
+.content{
+    flex:1;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: green;
+}
+legend {
+    margin: 10px;
+    padding: 0px 10px;
+}
+button {
+    display: inline-block;
+    margin: 5px;
+    padding: 0.5rem 1rem;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+button:hover {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+div.insert {
+    width: 80%;
+    display:flex;
+    padding:5px;
+    margin: 17px auto;
+}
+div.insert input {
+    width: 40vw;
+}
+div.time {
+    margin: 17px auto;
+}
+div.time input{
+    width: 15vw;
+}
+div.insert input, div.insert label {
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 8px;
+}
+div.insert label {
+    text-align: right;
+    color: blue;
+    font-weight: bold;
+}
+div.btn_box.right {
+    text-align: right;
+    justify-content: right;
+}
+div.btn_box.left {
+    text-align: left;
+    justify-content: left;
+}
+
+form.readbook_write button.save {
+    background-color: #3498DB;
+    color:white;
+}
+
+form.readbook_write button.reset {
+    background-color: #D35400;
+    color:white;
+}
+
+form.readbook_write button.list {
+    background-color: #F1C40F;
+}
+
+form.login_form button.login {
+    background-color: green;
+    color:white;
+}

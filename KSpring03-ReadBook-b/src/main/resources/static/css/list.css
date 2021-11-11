@@ -1,0 +1,18 @@
+table {
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 60vw;
+    margin:auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+table thead{
+    background-color:#eee;
+}
+table th {
+    padding: 16px;
+}
+table td {
+    padding: 8px;
+}

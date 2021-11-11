@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/static/css/main.css}" />
+    <link rel="stylesheet" th:href="@{/static/css/mypage.css}" />
+</head>
+<body>
+<th:block th:replace="fragment/headerAndFooter :: headerFragment"></th:block>
+    <div class="container">
+        <h1>MY PAGE</h1>
+        <form method="POST" th:Action="@{/logout}">
+            <button>로그아웃</button>
+        </form>
+    </div>
+<th:block th:replace="fragment/headerAndFooter :: footerFragment"></th:block>
+</body>
+</html>
