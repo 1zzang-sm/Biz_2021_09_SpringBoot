@@ -1,0 +1,20 @@
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<div th:fragment="content">
+    <div>
+        <h5 th:text="@{${post.title} + '-' + ${post.author}}"></h5>
+        <p><small th:text="${#temporals.format(post.createdDate, 'yyyy-MM-dd HH:mm')}"></small></p>
+        <p th:text="${post.content}"></p>
+    </div>
+    <div>
+        <a th:href="@{'/post/edit/' + ${post.id}}">수정</a>
+    </div>
+    <div>
+        <form th:action="@{'/post/' + ${post.id}}" method="POST">
+            <input type="hidden" name="_method" value="delete" />
+            <button>삭제</button>
+        </form>
+    </div>
+</div>
+</html>

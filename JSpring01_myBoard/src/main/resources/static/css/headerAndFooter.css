@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width:100vw;
+    height: 5vh;
+    text-align: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+}

@@ -1,0 +1,23 @@
+<html lang="ko"
+    xmlns:th="http://www.thymeleaf.org"
+>
+<div th:fragment="content" class="container">
+    <form th:action="@{'/post/edit/' + ${post.id}}" method="POST">
+        <input type="hidden" name="_method" value="put" />
+        <input type="hidden" name="id" th:value="${post.id}" />
+        <div>
+            <label>제목</label>
+            <input type="text" name="title" th:value="${post.title}" />
+        </div>
+        <div>
+            <label>작성자</label>
+            <input type="text" name="author" th:value="${post.author}" />
+        </div>
+        <div>
+            <label>내용</label>
+            <input type="text" name="content" th:value="${post.content}" />
+        </div>
+        <input type="submit" role="button" value="수정" />
+    </form>
+</div>
+</html>

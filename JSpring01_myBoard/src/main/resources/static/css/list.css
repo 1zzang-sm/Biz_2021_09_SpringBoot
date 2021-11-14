@@ -1,0 +1,19 @@
+.list {
+    width:100vw;
+    flex:1;
+}
+.list table {
+    margin: 10px auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+.list table td,
+.list table th {
+    padding:8px;
+}
+.list table td {
+    background-color: #eee;
+}
+.list table th {
+    background-color: #aaa;
+}
