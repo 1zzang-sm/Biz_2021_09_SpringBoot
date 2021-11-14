@@ -28,7 +28,6 @@ class ReadBookServiceImplV1(
 
         readBookDao.save(readBookDTO)
         bookDao.save(bookDTO)
-
     }
 
     override fun readBookList(): Array<ReadBookDTO> {
